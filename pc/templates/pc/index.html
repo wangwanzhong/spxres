@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'pc/bootstrap.min.css' %}" />
     <script src="{% static 'pc/jquery-2.1.4.js' %}"></script>
     <script src="{% static 'pc/bootstrap.min.js' %}"></script>
+    <style>
+        #login {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,7 +23,7 @@
     </div>
 
     <div class="pull-right">
-        <button type="button" class="btn btn-primary navbar-btn">管理后台</button>
+        <button id="login" type="button" class="btn btn-primary navbar-btn"><a href="/admin/pc/item/">管理后台</a></button>
     </div>
 </nav>
 
