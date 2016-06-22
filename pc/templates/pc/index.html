@@ -8,9 +8,12 @@
     <script src="{% static 'pc/jquery-2.1.4.js' %}"></script>
     <script src="{% static 'pc/bootstrap.min.js' %}"></script>
     <style>
-        #login {
-            color: #ffffff;
-            text-decoration: none;
+        #container {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        #side {
+            background-color: rgb(248, 248, 248);
         }
     </style>
 </head>
@@ -19,7 +22,7 @@
 <nav class="navbar navbar-inverse" role="navigation">
 
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">硬件资源列表</a>
+        <span class="navbar-brand">硬件资源列表</span>
     </div>
 
     <div class="pull-right">
@@ -76,7 +79,7 @@
             </table>
         </div>
 
-        <div class="col-md-2 col-lg-2">
+        <div id="side" class="col-md-2 col-lg-2">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#">过滤</a></li>
                 <hr>
